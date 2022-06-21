@@ -20,14 +20,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="2c1-Jl-5o8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JDd-ck-gi6">
-                                <rect key="frame" x="0.0" y="33" width="414" height="837"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JDd-ck-gi6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oy-PA-65B" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oy-PA-65B" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="271.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fob-ve-FIA">
-                                                <rect key="frame" x="87" y="53" width="240" height="128"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fob-ve-FIA">
+                                                <rect key="frame" x="109" y="71.5" width="196" height="128"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,8 +36,8 @@
                                             <constraint firstItem="fob-ve-FIA" firstAttribute="centerX" secondItem="6oy-PA-65B" secondAttribute="centerX" id="pL8-3X-xPX"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YUg-6P-8iU" userLabel="MiddleView">
-                                        <rect key="frame" x="0.0" y="245" width="414" height="252"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUg-6P-8iU" userLabel="MiddleView">
+                                        <rect key="frame" x="0.0" y="273.5" width="414" height="271"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceTwo" translatesAutoresizingMaskIntoConstraints="NO" id="m90-KJ-Ihg">
                                                 <rect key="frame" x="20" y="20" width="120" height="120"/>
@@ -50,8 +50,8 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqK-yv-dRw" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="507" width="414" height="330"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqK-yv-dRw" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="546.5" width="414" height="271.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-Nc-wzy">
                                                 <rect key="frame" x="20" y="20" width="86" height="48"/>
@@ -75,9 +75,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2c1-Jl-5o8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="07D-dt-PvU"/>
+                            <constraint firstAttribute="bottom" secondItem="JDd-ck-gi6" secondAttribute="bottom" id="9sa-TD-0XR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JDd-ck-gi6" secondAttribute="bottom" id="OJL-uw-b2Y"/>
                             <constraint firstItem="2c1-Jl-5o8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PWq-VH-Tz0"/>
                             <constraint firstAttribute="bottom" secondItem="2c1-Jl-5o8" secondAttribute="bottom" id="ZbS-xq-6gd"/>
                             <constraint firstItem="2c1-Jl-5o8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aAN-NS-kVD"/>
+                            <constraint firstItem="JDd-ck-gi6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cqZ-0F-37z"/>
+                            <constraint firstItem="JDd-ck-gi6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kJT-cG-Iqz"/>
+                            <constraint firstItem="JDd-ck-gi6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kgV-S1-giV"/>
+                            <constraint firstItem="JDd-ck-gi6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="luz-o6-wra"/>
+                            <constraint firstItem="JDd-ck-gi6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uUV-FK-tmQ"/>
+                            <constraint firstItem="JDd-ck-gi6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xH1-hm-2u2"/>
                         </constraints>
                     </view>
                     <connections>
